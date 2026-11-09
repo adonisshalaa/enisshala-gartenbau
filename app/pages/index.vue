@@ -6,7 +6,7 @@ const pageDescription = 'Pflasterarbeiten, Naturstein und Terrassenbau aus Abens
 
 useSeoMeta({
   title: pageTitle,
-  description: pageDescription,
+  description: pageDescription, 
   ogTitle: pageTitle,
   ogDescription: pageDescription
 })
