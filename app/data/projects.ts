@@ -5,7 +5,6 @@ export const projectCollections: ProjectCollection[] = [
     id: 'natural-stone-entrance',
     title: 'Hauseingang und Terrasse aus Stein',
     category: 'Naturstein und Pflaster',
-    description: 'Steinverkleidung, Eingangsstufen, ein Weg am Hang und eine befestigte Terrasse. Die Bilder zeigen auch einzelne Bauphasen.',
     photos: [
       { id: 1, src: '/images/projects/stone-terrace.jpeg', alt: 'Breite Terrasse mit Steinbelag neben einem Haus mit steilem Dach', title: 'Terrasse am steinverkleideten Haus' },
       { id: 2, src: '/images/projects/stone-entrance.jpeg', alt: 'Granitstufen vor einem Eingang mit Steinverkleidung', title: 'Eingangsstufen aus Granit' },
@@ -18,7 +17,6 @@ export const projectCollections: ProjectCollection[] = [
     id: 'covered-terrace',
     title: 'Belag für eine überdachte Terrasse',
     category: 'Terrassenbeläge',
-    description: 'Großformatige graue Platten unter einem Terrassendach. Eine Detailaufnahme zeigt den Anschluss an eine Stütze.',
     photos: [
       { id: 6, src: '/images/projects/covered-terrace.jpeg', alt: 'Überdachte Terrasse mit großen grauen Platten und dunklen Stützen', title: 'Überdachte Terrasse' },
       { id: 7, src: '/images/projects/covered-terrace-detail.jpeg', alt: 'Nahaufnahme des Plattenbelags an einer dunklen Terrassenstütze', title: 'Detail am Stützenanschluss' }

@@ -9,6 +9,6 @@ export interface ProjectCollection {
   id: string
   title: string
   category: string
-  description: string
+  description?: string
   photos: [Project, ...Project[]]
 }

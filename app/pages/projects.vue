@@ -39,8 +39,8 @@ function openPhoto(photo: Project, event: MouseEvent) {
             <h2 :id="`${collection.id}-title`" class="text-3xl font-semibold tracking-tight text-[#111827] sm:text-4xl">{{ collection.title }}</h2>
           </div>
           <div class="lg:pb-1">
-            <p class="max-w-xl leading-7 text-[#111827]/65">{{ collection.description }}</p>
-            <p class="mt-3 text-sm font-medium text-[#1e4620]">{{ collection.photos.length }} {{ collection.photos.length === 1 ? 'Foto' : 'Fotos' }}</p>
+            <p v-if="collection.description" class="max-w-xl leading-7 text-[#111827]/65">{{ collection.description }}</p>
+            <p class="text-sm font-medium text-[#1e4620]" :class="collection.description ? 'mt-3' : ''">{{ collection.photos.length }} {{ collection.photos.length === 1 ? 'Foto' : 'Fotos' }}</p>
           </div>
         </div>
 
