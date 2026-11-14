@@ -37,7 +37,6 @@ export const projectCollections: ProjectCollection[] = [
     id: 'brick-home-terrace',
     title: 'Terrasse am Klinkerhaus',
     category: 'Terrassenpflaster',
-    description: 'Eine großzügige befestigte Fläche am Klinkerhaus. Weitere Bilder zeigen die Verlegung und ein Detail am Eingang.',
     photos: [
       { id: 11, src: '/images/projects/brick-home-terrace.jpeg', alt: 'Breite gepflasterte Terrasse entlang eines Klinkerhauses', title: 'Terrasse am Klinkerhaus' },
       { id: 12, src: '/images/projects/brick-home-terrace-progress.jpeg', alt: 'Dunkler Terrassenbelag mit Baumaterial neben einem Klinkerhaus', title: 'Terrassenbelag im Bau' },
