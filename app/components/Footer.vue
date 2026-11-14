@@ -17,9 +17,8 @@ const footerLinks = [
           <p class="text-xs font-semibold uppercase tracking-[0.23em] text-[#c7d8c6]">Ihr Vorhaben beginnt hier</p>
           <h2 class="mt-3 max-w-2xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Lassen Sie uns über Ihren Außenbereich sprechen.</h2>
         </div>
-        <NuxtLink to="/contact" class="group inline-flex min-h-12 shrink-0 items-center justify-center gap-4 self-start rounded-full bg-[#f9fafb] px-6 text-sm font-semibold text-[#1e4620] motion-safe:transition-[background-color,transform] motion-safe:duration-300 hover:bg-[#e6ede5] motion-safe:hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:self-auto">
+        <NuxtLink to="/contact" class="inline-flex min-h-12 shrink-0 items-center justify-center self-start rounded-full bg-[#f9fafb] px-6 text-sm font-semibold text-[#1e4620] motion-safe:transition-[background-color,transform] motion-safe:duration-300 hover:bg-[#e6ede5] motion-safe:hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white lg:self-auto">
           Kontakt aufnehmen
-          <span aria-hidden="true" class="text-lg leading-none motion-safe:transition-transform motion-safe:duration-300 motion-safe:group-hover:translate-x-1">↗</span>
         </NuxtLink>
       </div>
 
@@ -51,7 +50,7 @@ const footerLinks = [
         <div class="lg:col-span-2">
           <h3 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#c7d8c6]">Standort</h3>
           <address class="mt-6 text-sm leading-7 not-italic">
-            <a :href="company.addressHref" target="_blank" rel="noopener noreferrer" class="inline-block text-white/80 underline-offset-4 motion-safe:transition-colors hover:text-white hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">{{ company.address.streetAddress }}<br>{{ company.address.postalCode }} {{ company.address.addressLocality }} <span aria-hidden="true">↗</span></a>
+            <a :href="company.addressHref" target="_blank" rel="noopener noreferrer" class="inline-block text-white/80 underline-offset-4 motion-safe:transition-colors hover:text-white hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">{{ company.address.streetAddress }}<br>{{ company.address.postalCode }} {{ company.address.addressLocality }}</a>
           </address>
         </div>
       </div>

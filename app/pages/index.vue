@@ -101,14 +101,14 @@ const processSteps = [
           <h2 id="featured-title" class="text-4xl font-semibold tracking-tight text-[#111827] sm:text-5xl">Ein Blick auf unsere Arbeit.</h2>
           <p class="mt-5 text-base leading-7 text-[#111827]/65">Echte Einblicke in Terrassen, Pflasterflächen und Arbeiten mit Naturstein.</p>
         </div>
-        <NuxtLink to="/projects" class="inline-flex min-h-11 items-center gap-2 self-start border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] transition-colors hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620] sm:self-auto">Alle Projekte ansehen <span aria-hidden="true">↗</span></NuxtLink>
+        <NuxtLink to="/projects" class="inline-flex min-h-11 items-center self-start border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] transition-colors hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620] sm:self-auto">Alle Projekte ansehen</NuxtLink>
       </div>
       <div class="mt-12 grid gap-7 md:grid-cols-3">
         <NuxtLink v-for="(project, index) in featuredProjects" :key="project.id" v-reveal="index * 100" :to="`/projects#${project.id}`" class="group block rounded-xl motion-safe:transition-transform motion-safe:duration-300 motion-safe:hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620]">
           <div class="aspect-4/5 overflow-hidden rounded-xl bg-[#a9bca8]/35"><img :src="project.photos[0].src" :alt="project.photos[0].alt" loading="lazy" class="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 group-hover:scale-[1.04]"></div>
-          <div class="mt-5 flex items-start justify-between gap-4">
-            <div><p class="text-xs font-semibold uppercase tracking-[0.15em] text-[#1e4620]">{{ project.category }}</p><h3 class="mt-2 text-xl font-semibold text-[#111827]">{{ project.title }}</h3></div>
-            <span class="flex size-9 shrink-0 items-center justify-center rounded-full bg-[#a9bca8]/30 text-[#1e4620] motion-safe:transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+          <div class="mt-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-[#1e4620]">{{ project.category }}</p>
+            <h3 class="mt-2 text-xl font-semibold text-[#111827]">{{ project.title }}</h3>
           </div>
         </NuxtLink>
       </div>
@@ -140,7 +140,7 @@ const processSteps = [
           <p class="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#1e4620]">Für Ihren Alltag</p>
           <h2 id="living-title" class="text-3xl font-semibold leading-tight tracking-tight text-[#111827] sm:text-4xl">Ein Platz, an dem man gern bleibt.</h2>
           <p class="mt-6 max-w-lg leading-7 text-[#111827]/70">Eine Terrasse verbindet Haus und Garten. Form, Oberfläche und Übergänge entscheiden darüber, wie gut sie sich nutzen lässt und wie selbstverständlich sie zum Zuhause gehört.</p>
-          <NuxtLink to="/contact" class="mt-8 inline-flex min-h-11 items-center gap-2 self-start border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620]">Erzählen Sie uns von Ihrem Vorhaben <span aria-hidden="true">↗</span></NuxtLink>
+          <NuxtLink to="/contact" class="mt-8 inline-flex min-h-11 items-center self-start border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620]">Erzählen Sie uns von Ihrem Vorhaben</NuxtLink>
         </div>
       </div>
     </section>

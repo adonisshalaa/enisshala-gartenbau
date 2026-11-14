@@ -49,10 +49,7 @@ function openPhoto(photo: Project, event: MouseEvent) {
             <span class="block aspect-4/3 overflow-hidden rounded-xl bg-[#dce5dc]">
               <img :src="photo.src" :alt="photo.alt" loading="lazy" class="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-500 group-hover:scale-[1.04]">
             </span>
-            <span class="mt-4 flex items-center justify-between gap-3">
-              <span class="text-base font-medium text-[#111827] sm:text-lg">{{ photo.title }}</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="size-7 shrink-0 rounded-full bg-[#a9bca8]/30 p-1 text-[#1e4620] motion-safe:transition-transform group-hover:translate-x-1"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6" /></svg>
-            </span>
+            <span class="mt-4 block text-base font-medium text-[#111827] sm:text-lg">{{ photo.title }}</span>
           </button>
         </div>
       </section>
