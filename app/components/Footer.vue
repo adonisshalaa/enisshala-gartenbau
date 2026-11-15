@@ -57,7 +57,6 @@ const footerLinks = [
 
       <div class="flex flex-col gap-3 border-t border-white/20 py-6 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
         <p>© {{ year }} {{ company.name }}. Alle Rechte vorbehalten.</p>
-        <p>Gartenbau in Abensberg</p>
       </div>
     </div>
   </footer>
