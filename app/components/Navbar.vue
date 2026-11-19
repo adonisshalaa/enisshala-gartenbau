@@ -4,6 +4,7 @@ const menuOpen = ref(false)
 const menuButton = ref<HTMLButtonElement | null>(null)
 const links = [
   { label: 'Startseite', to: '/' },
+  { label: 'Leistungen', to: '/leistungen' },
   { label: 'Projekte', to: '/projects' },
   { label: 'Kontakt', to: '/contact' }
 ] as const

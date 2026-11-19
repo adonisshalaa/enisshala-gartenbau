@@ -8,11 +8,6 @@ const inFlight = new Set<string>()
 const cooldownMs = 30_000
 
 export default defineEventHandler(async (event) => {
-  const contentLength = Number(getRequestHeader(event, 'content-length') || 0)
-  if (contentLength > 25_000) {
-    throw createError({ statusCode: 413, statusMessage: 'Die Nachricht ist zu lang.' })
-  }
-
   const body = await readBody<Record<string, unknown>>(event)
   if (!body || typeof body !== 'object' || Array.isArray(body)) {
     throw createError({ statusCode: 400, statusMessage: 'Ungültige Anfrage.' })
@@ -31,7 +26,7 @@ export default defineEventHandler(async (event) => {
 
   if (name.length < 2 || name.length > 100 || /[\r\n\x00-\x1f]/.test(name) ||
       email.length > 254 || !emailPattern.test(email) ||
-      message.length < 10 || message.length > 5_000) {
+      !message) {
     throw createError({ statusCode: 400, statusMessage: 'Bitte prüfen Sie Ihre Eingaben.' })
   }
 

@@ -2,8 +2,8 @@
 import { projectCollections } from '~/data/projects'
 
 const slides = [
+  projectCollections[6]!.photos[0].src,
   projectCollections[0]!.photos[0].src,
-  projectCollections[2]!.photos[2]!.src,
   projectCollections[3]!.photos[0].src
 ] as const
 
@@ -83,7 +83,7 @@ onBeforeUnmount(() => {
     <div class="mx-auto max-w-4xl">
       <p class="hero-enter mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-white/85 sm:text-sm" style="--hero-delay: 80ms">Garten- und Landschaftsbau aus Abensberg</p>
       <h1 id="hero-title" class="hero-enter text-5xl font-semibold leading-[1.08] tracking-tight sm:text-6xl lg:text-7xl" style="--hero-delay: 180ms">Außenbereiche, in denen man gern lebt.</h1>
-      <p class="hero-enter mx-auto mt-7 max-w-xl text-base leading-7 text-white/90 sm:text-lg" style="--hero-delay: 300ms">Pflasterarbeiten, Naturstein und Terrassen – passend zu Ihrem Zuhause gestaltet.</p>
+      <p class="hero-enter mx-auto mt-7 max-w-xl text-base leading-7 text-white/90 sm:text-lg" style="--hero-delay: 300ms">Wege, Terrassen und Außenanlagen – mit Erfahrung und passender Technik umgesetzt.</p>
       <div class="hero-enter mt-10 flex flex-wrap items-center justify-center gap-4" style="--hero-delay: 420ms">
         <NuxtLink to="/projects" class="inline-flex min-h-12 items-center justify-center rounded-full bg-[#1e4620] px-8 text-sm font-semibold text-white shadow-lg transition-colors motion-safe:transition-[transform,background-color,box-shadow] motion-safe:duration-300 hover:bg-[#285b2b] motion-safe:hover:-translate-y-1 motion-safe:hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Projekte ansehen</NuxtLink>
         <NuxtLink to="/contact" class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/70 px-8 text-sm font-semibold text-white transition-colors motion-safe:transition-[transform,background-color] motion-safe:duration-300 hover:bg-white/15 motion-safe:hover:-translate-y-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">Kontaktieren Sie uns</NuxtLink>

@@ -4,6 +4,7 @@ export const company = {
   phoneHref: 'tel:+4915115318550',
   email: 'info@enisshala-gartenbau.de',
   addressDisplay: 'Hofmark 54, 93326 Abensberg',
+  serviceAreaDisplay: 'Abensberg und Umgebung, ca. 150 km Umkreis',
   address: {
     streetAddress: 'Hofmark 54',
     postalCode: '93326',

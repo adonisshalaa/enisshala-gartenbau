@@ -1,4 +1,4 @@
-const paths = ['/', '/projects', '/contact'] as const
+const paths = ['/', '/leistungen', '/projects', '/contact'] as const
 
 export default defineEventHandler((event) => {
   setHeader(event, 'Content-Type', 'application/xml; charset=utf-8')

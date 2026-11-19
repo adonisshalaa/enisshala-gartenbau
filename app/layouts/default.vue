@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { company } from '~/config/company'
+import { services } from '~/data/services'
 
 const route = useRoute()
 const siteUrl = useRuntimeConfig().public.siteUrl.replace(/\/$/, '')
@@ -12,8 +13,8 @@ const businessSchema = {
   name: company.name,
   url: siteUrl,
   logo: `${siteUrl}/enis-shala-logo.png`,
-  image: `${siteUrl}/images/projects/stone-terrace.jpeg`,
-  description: 'Pflasterarbeiten, Natursteinarbeiten und Terrassenbau aus Abensberg.',
+  image: `${siteUrl}/images/projects/new/paved-courtyard.jpeg`,
+  description: 'Gartenbau und Pflasterarbeiten in Abensberg: Gartenwege, Hofflächen, Terrassenbau, Naturstein, Palisaden, L-Steine, Erdarbeiten, Entwässerung, Drainage und Rasenarbeiten.',
   telephone: company.phoneHref.replace('tel:', ''),
   email: company.email,
   address: {
@@ -21,8 +22,21 @@ const businessSchema = {
     ...company.address
   },
   areaServed: {
-    '@type': 'City',
-    name: 'Abensberg'
+    '@type': 'Place',
+    name: company.serviceAreaDisplay
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Leistungen im Gartenbau',
+    itemListElement: services.map((service) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: service.title,
+        description: service.description,
+        url: `${siteUrl}/leistungen#${service.id}`
+      }
+    }))
   }
 }
 
@@ -36,8 +50,8 @@ useSeoMeta({
   ogLocale: 'de_DE',
   ogType: 'website',
   ogUrl: canonicalUrl,
-  ogImage: `${siteUrl}/images/projects/stone-terrace.jpeg`,
-  ogImageAlt: 'Terrassen- und Natursteinarbeiten von Enis Shala Gartenbau',
+  ogImage: `${siteUrl}/images/projects/new/paved-courtyard.jpeg`,
+  ogImageAlt: 'Gepflasterte Hoffläche mit Stützmauern von Enis Shala Gartenbau',
   twitterCard: 'summary_large_image'
 })
 </script>

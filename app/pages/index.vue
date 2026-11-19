@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { projectCollections } from '~/data/projects'
+import { services } from '~/data/services'
 
 const pageTitle = 'Gartenbau & Pflasterarbeiten in Abensberg | Enis Shala'
-const pageDescription = 'Pflasterarbeiten, Naturstein und Terrassenbau aus Abensberg. Entdecken Sie echte Projekte von Enis Shala Gartenbau und nehmen Sie Kontakt auf.'
+const pageDescription = 'Enis Shala Gartenbau aus Abensberg: Pflasterarbeiten, Terrassenbau, Naturstein, Erdarbeiten, Drainage und Rasenarbeiten im Umkreis von ca. 150 km.'
 
 useSeoMeta({
   title: pageTitle,
@@ -11,29 +12,8 @@ useSeoMeta({
   ogDescription: pageDescription
 })
 
-const services: { number: string; title: string; description: string; details: string[] }[] = [
-  {
-    number: '01',
-    title: 'Pflasterarbeiten',
-    description: 'Wege und Eingangsbereiche, die sich passend zu Haus und Grundstück anfügen.',
-    details: ['Gartenwege', 'Hauseingänge', 'Pflasterflächen']
-  },
-  {
-    number: '02',
-    title: 'Terrassenbau',
-    description: 'Ein Platz im Freien entsteht durch ein stimmiges Zusammenspiel von Fläche, Material und Anschluss an das Haus.',
-    details: ['Terrassenbeläge', 'Großformatige Platten', 'Saubere Übergänge']
-  },
-  {
-    number: '03',
-    title: 'Natursteinarbeiten',
-    description: 'Stufen, Mauern und weitere Details aus Stein geben Außenanlagen Struktur und Charakter.',
-    details: ['Natursteinmauern', 'Eingangsstufen', 'Steindetails']
-  }
-]
-
 const featuredProjects = projectCollections.filter(({ id }) =>
-  ['natural-stone-entrance', 'paved-entrance', 'brick-home-terrace'].includes(id)
+  ['paving-at-house', 'garden-path', 'courtyard-retaining-walls'].includes(id)
 )
 
 const processSteps = [
@@ -50,7 +30,7 @@ const processSteps = [
   {
     number: '03',
     title: 'Umsetzen',
-    description: 'Schritt für Schritt entsteht ein Außenbereich, der im Alltag Freude macht.'
+    description: 'Mit den passenden Maschinen und Geräten setzen wir die abgestimmten Arbeiten Schritt für Schritt um.'
   }
 ] as const
 </script>
@@ -66,6 +46,7 @@ const processSteps = [
       </div>
       <div v-reveal="120" class="flex flex-col justify-center">
         <p class="max-w-2xl text-lg leading-8 text-[#111827]/70">Ein Außenbereich kann vieles sein: der Weg nach Hause, ein Platz für gemeinsame Stunden oder ein ruhiger Rückzugsort. Mit Pflaster, Naturstein und durchdachten Details gestalten wir Flächen, die zu Ihrem Alltag passen.</p>
+        <p class="mt-5 max-w-2xl text-base leading-7 text-[#111827]/65">Von Abensberg aus übernehmen wir Projekte im Umkreis von etwa 150 km.</p>
         <div class="mt-8 flex flex-wrap gap-3 text-sm font-medium text-[#1e4620]">
           <span class="rounded-full bg-[#a9bca8]/25 px-4 py-2">Klare Gestaltung</span>
           <span class="rounded-full bg-[#a9bca8]/25 px-4 py-2">Passende Materialien</span>
@@ -79,7 +60,7 @@ const processSteps = [
         <div v-reveal class="max-w-2xl">
           <p class="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#1e4620]">Unsere Leistungen</p>
           <h2 id="services-title" class="text-4xl font-semibold tracking-tight text-[#111827] sm:text-5xl">Außenanlagen mit einem klaren Konzept.</h2>
-          <p class="mt-5 text-base leading-7 text-[#111827]/65">Vom Hauseingang bis zur Terrasse: Wir verbinden praktische Lösungen mit einer ruhigen Gestaltung.</p>
+          <p class="mt-5 text-base leading-7 text-[#111827]/65">Von Wegen und Terrassen bis zu Erdarbeiten, Entwässerung und Rasenflächen.</p>
         </div>
         <div class="mt-12 grid gap-5 md:grid-cols-3 lg:gap-7">
           <article v-for="(service, index) in services" :key="service.number" v-reveal="index * 100" class="flex h-full flex-col rounded-2xl border border-[#1e4620]/10 bg-[#f9fafb] p-7 shadow-sm motion-safe:transition-[box-shadow,border-color] motion-safe:duration-300 hover:border-[#1e4620]/25 hover:shadow-lg sm:p-9">
@@ -91,6 +72,7 @@ const processSteps = [
             </ul>
           </article>
         </div>
+        <NuxtLink to="/leistungen" class="mt-10 inline-flex min-h-11 items-center border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620]">Alle Leistungen im Detail</NuxtLink>
       </div>
     </section>
 
@@ -99,7 +81,7 @@ const processSteps = [
         <div class="max-w-2xl">
           <p class="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#1e4620]">Ausgewählte Projekte</p>
           <h2 id="featured-title" class="text-4xl font-semibold tracking-tight text-[#111827] sm:text-5xl">Ein Blick auf unsere Arbeit.</h2>
-          <p class="mt-5 text-base leading-7 text-[#111827]/65">Echte Einblicke in Terrassen, Pflasterflächen und Arbeiten mit Naturstein.</p>
+          <p class="mt-5 text-base leading-7 text-[#111827]/65">Echte Einblicke in Pflasterflächen, Gartenwege und Arbeiten am Grundstück.</p>
         </div>
         <NuxtLink to="/projects" class="inline-flex min-h-11 items-center self-start border-b border-[#1e4620] text-sm font-semibold text-[#1e4620] transition-colors hover:text-[#285b2b] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620] sm:self-auto">Alle Projekte ansehen</NuxtLink>
       </div>

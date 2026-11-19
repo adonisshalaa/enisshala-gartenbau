@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'de' },
       title: 'Enis Shala Gartenbau',
       meta: [
-        { name: 'description', content: 'Enis Shala Gartenbau: Pflasterarbeiten, Terrassenbau und Natursteinarbeiten für Außenbereiche in Abensberg und Umgebung.' },
+        { name: 'description', content: 'Enis Shala Gartenbau aus Abensberg: Pflasterarbeiten, Terrassenbau, Naturstein, Erdarbeiten, Entwässerung und Rasenarbeiten im Umkreis von ca. 150 km.' },
         { name: 'theme-color', content: '#1e4620' }
       ],
       link: [

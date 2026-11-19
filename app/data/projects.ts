@@ -43,5 +43,43 @@ export const projectCollections: ProjectCollection[] = [
       { id: 13, src: '/images/projects/brick-home-doorstep.jpeg', alt: 'Dunkle Eingangsstufe unter einer offenen Tür in einer Klinkerwand', title: 'Detail an der Eingangsstufe' },
       { id: 14, src: '/images/projects/brick-home-paving-work.jpeg', alt: 'Großformatige Platten und Werkzeuge während der Verlegung auf einer Terrasse', title: 'Verlegung großformatiger Platten' }
     ]
+  },
+  {
+    id: 'paving-at-house',
+    title: 'Pflasterfläche am Wohnhaus',
+    category: 'Pflasterarbeiten',
+    photos: [
+      { id: 15, src: '/images/projects/new/house-paving-finish.jpeg', alt: 'Neu gepflasterte Fläche entlang eines gelben Wohnhauses mit noch offenem Erdreich am Rand', title: 'Pflasterfläche am Haus' },
+      { id: 16, src: '/images/projects/new/house-paving-base.jpeg', alt: 'Vorbereitete Schotterfläche mit gesetzten Randsteinen neben einem gelben Wohnhaus', title: 'Unterbau und Einfassung' },
+      { id: 17, src: '/images/projects/new/house-paving-progress.jpeg', alt: 'Teilweise verlegte Pflastersteine auf einer vorbereiteten Fläche neben einem Wohnhaus', title: 'Pflasterung im Bau' }
+    ]
+  },
+  {
+    id: 'garden-path',
+    title: 'Geschwungener Gartenweg',
+    category: 'Gartenwege',
+    photos: [
+      { id: 18, src: '/images/projects/new/brick-garden-path.jpeg', alt: 'Geschwungener Gartenweg aus rötlichen Pflastersteinen zwischen Bepflanzung und Rasen', title: 'Gartenweg aus rotem Pflaster' }
+    ]
+  },
+  {
+    id: 'courtyard-retaining-walls',
+    title: 'Hoffläche mit Stützmauern',
+    category: 'Hofflächen und Mauern',
+    photos: [
+      { id: 19, src: '/images/projects/new/paved-courtyard.jpeg', alt: 'Großzügig gepflasterte Hoffläche vor einem Gebäude mit hellen Stützmauern', title: 'Gepflasterte Hoffläche' },
+      { id: 20, src: '/images/projects/new/courtyard-retaining-walls.jpeg', alt: 'Helle Stützmauern und vorbereiteter Untergrund vor der Pflasterung einer Hoffläche', title: 'Stützmauern und Vorbereitung' }
+    ]
+  },
+  {
+    id: 'earthworks-drainage',
+    title: 'Erdarbeiten und Entwässerung',
+    category: 'Erdarbeiten und Entwässerung',
+    photos: [
+      { id: 21, src: '/images/projects/new/drainage-pipe-trench.jpeg', alt: 'Grünes Rohr in einem ausgehobenen Graben neben einem Minibagger', title: 'Rohrverlegung im Graben' },
+      { id: 22, src: '/images/projects/new/shaft-excavation.jpeg', alt: 'Ausgehobene Grube für den Einbau eines Betonschachtrings', title: 'Aushub für einen Schacht' },
+      { id: 23, src: '/images/projects/new/drainage-ring-level.jpeg', alt: 'Betonschachtring in einer ausgehobenen Grube mit aufgelegter Wasserwaage', title: 'Einbau des Schachtrings' },
+      { id: 24, src: '/images/projects/new/drainage-ring-gravel.jpeg', alt: 'Betonschachtring in einer Grube mit umliegendem Kies', title: 'Schachtring mit Kiesbett' }
+    ]
   }
 ]

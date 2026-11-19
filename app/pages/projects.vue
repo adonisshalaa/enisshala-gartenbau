@@ -2,8 +2,8 @@
 import { projectCollections } from '~/data/projects'
 import type { Project } from '~/types/project'
 
-const pageTitle = 'Projekte: Terrassen, Pflaster & Naturstein | Enis Shala'
-const pageDescription = 'Echte Einblicke in Pflasterarbeiten, Terrassen und Natursteinprojekte von Enis Shala Gartenbau aus Abensberg. Mit Fotos aus verschiedenen Bauphasen.'
+const pageTitle = 'Referenzen: Pflaster, Terrassen & Gartenwege | Enis Shala'
+const pageDescription = 'Echte Projektbilder aus dem Gartenbau: Pflasterarbeiten, Gartenwege, Hofflächen, Terrassen, Naturstein und Entwässerung von Enis Shala aus Abensberg.'
 
 useSeoMeta({
   title: pageTitle,
@@ -26,7 +26,7 @@ function openPhoto(photo: Project, event: MouseEvent) {
       <div v-reveal class="mx-auto max-w-7xl lg:px-4">
         <p class="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-[#1e4620]">Unsere Arbeit</p>
         <h1 id="projects-title" class="max-w-3xl text-4xl font-semibold leading-tight tracking-tight text-[#111827] sm:text-5xl">Projekte und Details aus der Praxis.</h1>
-        <p class="mt-5 max-w-2xl text-base leading-7 text-[#111827]/70">{{ projectCollections.length }} Projekte in {{ photoCount }} Bildern: Terrassen, Wege, Hauseingänge und Arbeiten mit Stein.</p>
+        <p class="mt-5 max-w-2xl text-base leading-7 text-[#111827]/70">{{ projectCollections.length }} Projektgalerien mit {{ photoCount }} Bildern: Terrassen, Wege, Hofflächen und Erdarbeiten.</p>
         <p class="mt-3 text-sm text-[#111827]/60">Einige Aufnahmen zeigen die Arbeiten während der Ausführung.</p>
       </div>
     </section>

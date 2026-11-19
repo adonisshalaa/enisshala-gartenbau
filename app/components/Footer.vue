@@ -4,6 +4,7 @@ const year = new Date().getFullYear()
 
 const footerLinks = [
   { label: 'Startseite', to: '/' },
+  { label: 'Leistungen', to: '/leistungen' },
   { label: 'Projekte', to: '/projects' },
   { label: 'Kontakt', to: '/contact' }
 ] as const
