@@ -126,10 +126,6 @@ async function submitForm() {
             <a :href="company.addressHref" target="_blank" rel="noopener noreferrer" class="text-lg font-medium text-[#1e4620] underline-offset-4 hover:underline focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1e4620]">{{ company.addressDisplay }}</a>
           </address>
         </div>
-        <div>
-          <p class="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#111827]/50">Einsatzgebiet</p>
-          <p class="text-lg font-medium text-[#1e4620]">{{ company.serviceAreaDisplay }}</p>
-        </div>
       </div>
     </div>
     <div v-reveal="120" class="rounded-2xl border border-[#1e4620]/10 bg-white p-6 shadow-sm sm:p-9">
